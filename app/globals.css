@@ -1,0 +1,119 @@
+:root {
+  --background: #f4f1e8;
+  --surface: #fffdf8;
+  --foreground: #1f2933;
+  --muted: #5c6773;
+  --border: #d7d1c4;
+  --accent: #2c5f7b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at top, rgba(44, 95, 123, 0.12), transparent 35%),
+    linear-gradient(180deg, #f8f5ee 0%, var(--background) 100%);
+  font-family: var(--font-geist-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.card {
+  width: min(100%, 42rem);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: rgba(255, 253, 248, 0.92);
+  box-shadow: 0 20px 45px rgba(31, 41, 51, 0.08);
+}
+
+.card h1 {
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.policy {
+  max-width: 52rem;
+}
+
+.policy h1 {
+  margin-bottom: 1.25rem;
+}
+
+.policy h2 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.policy p {
+  color: var(--foreground);
+}
+
+.policy .meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    border-radius: 18px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
