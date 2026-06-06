@@ -13,7 +13,7 @@ export default function Home() {
         </p>
 
         <nav className="links" aria-label="Site links">
-          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/privacy">Hull Keeper Privacy Policy</Link>
         </nav>
       </section>
     </main>

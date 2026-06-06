@@ -97,6 +97,16 @@ a:hover {
   color: var(--foreground);
 }
 
+.policy ul,
+.policy ol {
+  margin: 0.25rem 0 1rem 1.5rem;
+}
+
+.policy li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
 .policy .meta {
   color: var(--muted);
   font-size: 0.95rem;
