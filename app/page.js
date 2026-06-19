@@ -10,6 +10,12 @@ const projects = [
       "Hull Keeper is a mobile arcade game about protecting your ship, clearing debris, collecting salvage, and surviving as long as possible.",
     status: "Now Building",
     actionLabel: "Project page coming soon",
+    featured: true,
+    label: "Featured Game",
+    titleArtSrc: "/images/hull-keeper/HullKeeperTitle.png",
+    titleArtAlt: "Hull Keeper title artwork",
+    iconSrc: "/images/hull-keeper/HullKeeperIcon.png",
+    iconAlt: "Hull Keeper game icon",
   },
   {
     title: "Future Projects",
@@ -100,8 +106,22 @@ export default function Home() {
               </div>
 
               <div className="feature-copy">
-                <p className="console-label">Current Orbit</p>
-                <h2>Hull Keeper</h2>
+                <div className="feature-copy-header">
+                  <span className="feature-game-badge">
+                    <Image
+                      src="/images/hull-keeper/HullKeeperIcon.png"
+                      alt="Hull Keeper icon"
+                      width={1254}
+                      height={1254}
+                      className="feature-game-icon"
+                    />
+                  </span>
+
+                  <div>
+                    <p className="console-label">Current Orbit</p>
+                    <h2>Hull Keeper</h2>
+                  </div>
+                </div>
                 <p>
                   Salvage, survive, and keep the ship together while the debris
                   field gets meaner.
