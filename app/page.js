@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ProjectCard from "./components/project-card";
 import SectionHeading from "./components/section-heading";
@@ -31,7 +32,16 @@ export default function Home() {
     <div className="site-shell">
       <header className="site-header">
         <Link href="/" className="brand" aria-label="Unc Studios home">
-          <span className="brand-mark">US</span>
+          <span className="brand-logo-wrap">
+            <Image
+              src="/images/UncStudiosLogo.png"
+              alt="Unc Studios illustrated logo"
+              width={54}
+              height={54}
+              className="brand-logo"
+              priority
+            />
+          </span>
           <span className="brand-copy">
             <strong>Unc Studios</strong>
             <span>indie game and app studio</span>
@@ -67,19 +77,48 @@ export default function Home() {
           </div>
 
           <aside className="hero-console" aria-label="Studio snapshot">
-            <div className="console-card">
-              <p className="console-label">Current Orbit</p>
-              <h2>Hull Keeper</h2>
-              <p>
-                Salvage, survive, and keep the ship together while the debris
-                field gets meaner.
-              </p>
+            <div className="hero-banner-frame">
+              <Image
+                src="/images/UncStudiosBanner.jpg"
+                alt="Unc Studios banner artwork"
+                width={1164}
+                height={306}
+                className="hero-banner"
+                priority
+              />
+            </div>
+
+            <div className="console-card console-card-feature">
+              <div className="hero-logo-panel">
+                <Image
+                  src="/images/UncStudiosLogo.png"
+                  alt="Unc Studios mascot logo"
+                  width={400}
+                  height={400}
+                  className="hero-logo-art"
+                />
+              </div>
+
+              <div className="feature-copy">
+                <p className="console-label">Current Orbit</p>
+                <h2>Hull Keeper</h2>
+                <p>
+                  Salvage, survive, and keep the ship together while the debris
+                  field gets meaner.
+                </p>
+              </div>
+            </div>
+
+            <div className="console-strip">
+              <span>Black-and-white identity</span>
+              <span>Dark purple accent</span>
+              <span>Indie-built</span>
             </div>
 
             <div className="console-grid">
               <div className="mini-panel">
                 <span className="mini-label">Mood</span>
-                <strong>Arcade grit</strong>
+                <strong>Sleek mystery</strong>
               </div>
               <div className="mini-panel">
                 <span className="mini-label">Approach</span>
@@ -95,6 +134,10 @@ export default function Home() {
               </div>
             </div>
           </aside>
+        </section>
+
+        <section className="section-divider" aria-hidden="true">
+          <span />
         </section>
 
         <section id="about" className="content-section">
