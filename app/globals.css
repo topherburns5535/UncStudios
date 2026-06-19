@@ -43,6 +43,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+.button,
+.status-badge,
+.project-label,
+.hero-kicker,
+.section-eyebrow,
+.console-label,
+.mini-label,
+.engine-note-label {
+  font-family:
+    var(--font-kalam),
+    "Segoe Print",
+    "Bradley Hand",
+    "Comic Sans MS",
+    cursive;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -607,6 +626,10 @@ img {
   justify-content: center;
   width: 100%;
   min-height: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  background: #000000;
 }
 
 .project-title-art {

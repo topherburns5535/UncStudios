@@ -129,12 +129,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="console-strip">
-              <span>Black-and-white identity</span>
-              <span>Dark purple accent</span>
-              <span>Indie-built</span>
-            </div>
-
             <div className="console-grid">
               <div className="mini-panel">
                 <span className="mini-label">Mood</span>
