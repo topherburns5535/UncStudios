@@ -254,6 +254,12 @@ img {
   min-width: 0;
 }
 
+.hero-copy .hero-banner-frame {
+  align-self: center;
+  width: min(100%, 31rem);
+  margin-bottom: 1.45rem;
+}
+
 .hero-kicker,
 .section-eyebrow,
 .console-label,
@@ -375,27 +381,7 @@ img {
 }
 
 .console-card-feature {
-  display: grid;
-  grid-template-columns: minmax(140px, 170px) minmax(0, 1fr);
-  gap: 1rem;
-  align-items: center;
-}
-
-.hero-logo-panel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  background:
-    radial-gradient(circle at center, rgba(75, 22, 133, 0.2), transparent 62%),
-    rgba(255, 255, 255, 0.02);
-}
-
-.hero-logo-art {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  display: block;
 }
 
 .feature-copy h2,
@@ -837,14 +823,6 @@ img {
     max-width: 12ch;
   }
 
-  .console-card-feature {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-logo-panel {
-    max-width: 220px;
-  }
-
   .featured-project {
     grid-column: auto;
   }
@@ -878,6 +856,11 @@ img {
   .contact-panel,
   .card {
     padding: 1rem;
+  }
+
+  .hero-copy .hero-banner-frame {
+    width: min(100%, 24rem);
+    margin-bottom: 1.1rem;
   }
 
   .brand {

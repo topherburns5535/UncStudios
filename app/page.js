@@ -65,6 +65,17 @@ export default function Home() {
       <main className="home-main">
         <section className="hero-panel">
           <div className="hero-copy">
+            <div className="hero-banner-frame">
+              <Image
+                src="/images/UncStudiosBanner.jpg"
+                alt="Unc Studios banner artwork"
+                width={1164}
+                height={306}
+                className="hero-banner"
+                priority
+              />
+            </div>
+
             <p className="hero-kicker">Tiny team. Strange signals. Real builds.</p>
             <h1>Small studio. Weird ideas. Playable worlds.</h1>
             <p className="hero-text">
@@ -83,28 +94,7 @@ export default function Home() {
           </div>
 
           <aside className="hero-console" aria-label="Studio snapshot">
-            <div className="hero-banner-frame">
-              <Image
-                src="/images/UncStudiosBanner.jpg"
-                alt="Unc Studios banner artwork"
-                width={1164}
-                height={306}
-                className="hero-banner"
-                priority
-              />
-            </div>
-
             <div className="console-card console-card-feature">
-              <div className="hero-logo-panel">
-                <Image
-                  src="/images/UncStudiosLogo.png"
-                  alt="Unc Studios mascot logo"
-                  width={400}
-                  height={400}
-                  className="hero-logo-art"
-                />
-              </div>
-
               <div className="feature-copy">
                 <div className="feature-copy-header">
                   <span className="feature-game-badge">
