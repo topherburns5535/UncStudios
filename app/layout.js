@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Unc Studios",
-  description: "Independent game developer and creator of Hull Keeper.",
+  description:
+    "Small studio. Weird ideas. Playable worlds. Unc Studios builds indie games, apps, and imaginative interactive experiments.",
 };
 
 export default function RootLayout({ children }) {
